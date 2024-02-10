@@ -8,4 +8,5 @@ FROM quay.io/jupyter/r-notebook:2023-11-19
 RUN conda install --quiet --yes \
     'r-ggplot2=3.4.4' \
     'pandas=2.1.4' \
+    'r-tidyverse=2.0.0' \
     && conda clean --all -f -y # Cleaning up unnecessary files to keep the image size down.
